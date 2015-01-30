@@ -1,0 +1,276 @@
+development:
+  snapshot: &snapshot
+    host: 127.0.0.1
+    port: 35110
+    pool: 5
+    multiplexed: true
+    disabled: true
+  graph: &graph
+    host: 127.0.0.1
+    port: 35010
+    pool: 5
+  comm: &comm
+    host: 127.0.0.1
+    port: 35020
+    pool: 5
+  analytics: &analytics
+    host: 127.0.0.1
+    port: 35050
+    pool: 5
+    disabled: true
+  money: &money
+    host: 127.0.0.1
+    port: 35030
+    pool: 5
+    disabled: true
+  api_tokens:
+    <<: *graph
+  apps_api_user_tokens:
+    <<: *graph
+  assignments:
+    <<: *comm
+  quizzes:
+    <<: *comm
+  quiz_contents:
+    <<: *comm
+  snapshot_quizzes:
+    <<: *snapshot
+  snapshot_student_performance:
+    <<: *snapshot
+  assignment_submissions:
+    <<: *comm
+  connections:
+    <<: *graph
+  quiz_submissions:
+    <<: *comm
+  ip_forwarding_rules:
+    <<: *graph
+  events:
+    <<: *comm
+  groups:
+    <<: *graph
+  group_listings:
+    <<: *graph
+  memberships:
+    <<: *graph
+  messages:
+    <<: *comm
+  replies:
+    <<: *comm
+  notes:
+    <<: *comm
+  permissions:
+    <<: *graph
+  user_recipients:
+    <<: *graph
+  schools:
+    <<: *graph
+  edmodo_sessions:
+    <<: *graph
+  districts:
+    <<: *graph
+  tasks:
+    <<: *comm
+  users:
+    <<: *graph
+  user_accounts:
+    <<: *graph
+  snapshot_usage:
+    <<: *analytics
+  snapshot_performance:
+    <<: *analytics
+  badges:
+    <<: *comm
+  awarded_badges:
+    <<: *comm
+  snapshot_recommendations:
+    host: 127.0.0.1
+    port: 35060
+    pool: 5
+    disabled: true
+  user_settings:
+    <<: *graph
+  search:
+    host: 127.0.0.1
+    port: 35070
+    pool: 5
+    disabled: true
+  snapshot_suggested_groups:
+    <<: *analytics
+  snapshot_recommended_teachers:
+    <<: *analytics
+  one_time_tokens:
+    <<: *graph
+  payments:
+    <<: *money
+  edmodo_insights:
+    <<: *analytics
+  resource_flags:
+    host: 127.0.0.1
+    port: 35100
+    pool: 5
+    multiplexed: false
+    disabled: true
+  engagements:
+    <<: *comm
+  assigned_recommendations:
+    <<: *comm
+  relationships:
+    <<: *graph
+  resources:
+    host: 127.0.0.1
+    port: 35110
+    pool: 5
+    multiplexed: false
+    disabled: true
+  reviews:
+    <<: *comm
+  grades:
+    <<: *comm
+  reactions:
+    <<: *comm
+  words:
+    host: 127.0.0.1
+    port: 35150
+    pool: 5
+    multiplexed: false
+    disabled: true
+
+test:
+  snapshot: &snapshot
+    host: 127.0.0.1
+    port: 36110
+    pool: 5
+    multiplexed: true
+    disabled: true
+  graph: &graph
+    host: 127.0.0.1
+    port: 36010
+    pool: 5
+  comm: &comm
+    host: 127.0.0.1
+    port: 36020
+    pool: 5
+  analytics: &analytics
+    host: 127.0.0.1
+    port: 36050
+    pool: 5
+    disabled: true
+  money: &money
+    host: 127.0.0.1
+    port: 36030
+    pool: 5
+    disabled: true
+  api_tokens:
+    <<: *graph
+  apps_api_user_tokens:
+    <<: *graph
+  assignments:
+    <<: *comm
+  quizzes:
+    <<: *comm
+  quiz_contents:
+    <<: *comm
+  snapshot_quizzes:
+    <<: *snapshot
+  snapshot_student_performance:
+    <<: *snapshot
+  assignment_submissions:
+    <<: *comm
+  connections:
+    <<: *graph
+  quiz_submissions:
+    <<: *comm
+  ip_forwarding_rules:
+    <<: *graph
+  events:
+    <<: *comm
+  groups:
+    <<: *graph
+  group_listings:
+    <<: *graph
+  memberships:
+    <<: *graph
+  messages:
+    <<: *comm
+  replies:
+    <<: *comm
+  notes:
+    <<: *comm
+  permissions:
+    <<: *graph
+  user_recipients:
+    <<: *graph
+  schools:
+    <<: *graph
+  edmodo_sessions:
+    <<: *graph
+  districts:
+    <<: *graph
+  tasks:
+    <<: *comm
+  users:
+    <<: *graph
+  user_accounts:
+    <<: *graph
+  snapshot_usage:
+    <<: *analytics
+  snapshot_performance:
+    <<: *analytics
+  badges:
+    <<: *comm
+  awarded_badges:
+    <<: *comm
+  snapshot_recommendations:
+    host: 127.0.0.1
+    port: 36060
+    pool: 5
+    disabled: true
+  user_settings:
+    <<: *graph
+  search:
+    host: 127.0.0.1
+    port: 36070
+    pool: 5
+    disabled: true
+  snapshot_suggested_groups:
+    <<: *analytics
+  snapshot_recommended_teachers:
+    <<: *analytics
+  one_time_tokens:
+    <<: *graph
+  payments:
+    <<: *money
+  edmodo_insights:
+    <<: *analytics
+  resource_flags:
+    host: 127.0.0.1
+    port: 36100
+    pool: 5
+    multiplexed: false
+    disabled: true
+  engagements:
+    <<: *comm
+    disabled: true
+  assigned_recommendations:
+    <<: *comm
+  relationships:
+    <<: *graph
+  resources:
+    host: 127.0.0.1
+    port: 36110
+    pool: 5
+    multiplexed: false
+    disabled: true
+  reviews:
+    <<: *comm
+  grades:
+    <<: *comm
+  reactions:
+    <<: *comm
+  words:
+    host: 127.0.0.1
+    port: 36150
+    pool: 5
+    multiplexed: false
+    disabled: true
